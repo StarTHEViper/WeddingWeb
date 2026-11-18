@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>婚礼请帖 · 请选择版本</title>
+<meta name="description" content="2026.12.20 杭州嘉宝丽酒店｜两种风格的婚礼请帖：优雅常规版 / 星露谷像素版。">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --paper:#F6F1E7;
+    --ink:#2A2621;
+    --muted:#7A7166;
+    --gold:#B4936A;
+    --line:rgba(42,38,33,.14);
+    --serif:"Songti SC","STSong","Noto Serif SC","Source Han Serif SC",serif;
+    --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  }
+  body{
+    margin:0;min-height:100svh;background:var(--paper);color:var(--ink);
+    font-family:var(--sans);-webkit-font-smoothing:antialiased;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    padding:48px 20px 40px;line-height:1.7;
+    background-image:radial-gradient(120% 80% at 50% 0%,#FFFDF8 0%,transparent 60%);
+  }
+  header{text-align:center;margin-bottom:clamp(28px,5vw,48px)}
+  .eyebrow{
+    font-size:11px;letter-spacing:.42em;color:var(--gold);
+    text-transform:uppercase;margin:0 0 14px
+  }
+  h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(24px,4.6vw,34px);letter-spacing:.1em;margin:0 0 12px
+  }
+  .rule{display:flex;align-items:center;justify-content:center;gap:10px;color:var(--gold)}
+  .rule i{display:block;width:44px;height:1px;background:currentColor;opacity:.5}
+  .rule b{font-size:8px;line-height:1}
+  .meta{font-size:13px;color:var(--muted);letter-spacing:.08em;margin:14px 0 0}
+
+  .grid{
+    width:100%;max-width:900px;
+    display:grid;gap:18px;grid-template-columns:1fr;
+  }
+  @media (min-width:720px){ .grid{grid-template-columns:1fr 1fr;gap:24px} }
+
+  .card{
+    position:relative;display:block;text-decoration:none;color:inherit;
+    border:1px solid var(--line);background:#fff;overflow:hidden;
+    transition:transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s,border-color .5s;
+    box-shadow:0 1px 2px rgba(42,38,33,.04);
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(42,38,33,.35);border-color:rgba(180,147,106,.6)}
+  .thumb{position:relative;height:190px;overflow:hidden}
+  .thumb .label{
+    position:absolute;left:10px;top:10px;z-index:3;padding:3px 9px;
+    background:rgba(30,24,16,.5);color:#fff;
+    font-size:10px;letter-spacing:.24em;text-indent:.24em
+  }
+  .body{padding:20px 22px 24px}
+  .body h2{
+    font-family:var(--serif);font-weight:400;font-size:20px;letter-spacing:.08em;margin:0 0 8px
+  }
+  .body p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.85}
+  .go{
+    display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+    font-size:12px;letter-spacing:.18em;color:var(--gold)
+  }
+  .go::after{content:"→";transition:transform .4s}
+  .card:hover .go::after{transform:translateX(6px)}
+
+  /* 优雅版缩略 */
+  .t-classic{
+    background:
+      radial-gradient(90% 120% at 50% 0%,#FFFDF8,#F1E9DC 70%,#E7DCC8);
+  }
+  .t-classic .inner{
+    position:absolute;inset:16px;border:1px solid rgba(180,147,106,.55);
+    display:grid;place-items:center;text-align:center
+  }
+  .t-classic .inner span{
+    font-family:var(--serif);font-size:15px;letter-spacing:.3em;color:#3C4B41
+  }
+  .t-classic .inner small{
+    display:block;margin-top:8px;font-size:9px;letter-spacing:.34em;color:var(--gold)
+  }
+
+  /* 像素版缩略 */
+  .t-pixel{background:#3E7B4F;image-rendering:pixelated}
+  .t-pixel .sky{
+    position:absolute;inset:0 0 46% 0;
+    background:linear-gradient(#7CC3F0 0 58%,#A8DAF5 58% 100%)
+  }
+  .t-pixel .ground{
+    position:absolute;inset:46% 0 0 0;
+    background:
+      repeating-linear-gradient(90deg,#4E9455 0 8px,#498C50 8px 16px),
+      #4E9455;
+  }
+  .t-pixel .ground::after{
+    content:"";position:absolute;inset:0;
+    background:
+      repeating-linear-gradient(0deg,transparent 0 10px,rgba(0,0,0,.06) 10px 12px)
+  }
+  .t-pixel .sun{
+    position:absolute;width:34px;height:34px;right:26px;top:24px;
+    background:#FFE173;box-shadow:0 0 0 6px rgba(255,225,115,.35)
+  }
+  .t-pixel .box{
+    position:absolute;left:50%;bottom:26px;transform:translateX(-50%);
+    background:#F6E3BE;border:3px solid #6B4423;
+    box-shadow:inset 0 0 0 2px #C89B62, 0 4px 0 rgba(0,0,0,.25);
+    padding:10px 16px;text-align:center;white-space:nowrap
+  }
+  .t-pixel .box b{
+    display:block;font-size:12px;color:#5A3A1F;letter-spacing:.18em;font-weight:700
+  }
+  .t-pixel .box i{
+    display:block;font-size:9px;color:#8A6636;letter-spacing:.16em;font-style:normal;margin-top:4px
+  }
+  .t-pixel .heart{
+    position:absolute;left:50%;top:26%;transform:translateX(-50%);
+    width:10px;height:10px;background:#E85D5D;
+    box-shadow:10px 0 #E85D5D,0 10px #E85D5D,10px 10px #E85D5D,20px 10px #E85D5D,10px 20px #E85D5D;
+  }
+  .t-pixel .tree{
+    position:absolute;left:24px;bottom:44%;width:12px;height:26px;background:#6B4423
+  }
+  .t-pixel .tree::before{
+    content:"";position:absolute;left:-16px;top:-30px;width:44px;height:34px;
+    background:#2E7D43;box-shadow:0 -10px 0 -6px #2E7D43
+  }
+  footer{margin-top:clamp(28px,5vw,44px);font-size:11.5px;letter-spacing:.16em;color:var(--muted);text-align:center}
+  footer b{color:var(--gold);font-weight:400}
+</style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">Wedding Invitation</p>
+  <h1>2026 · 12 · 20</h1>
+  <div class="rule" aria-hidden="true"><i></i><b>❖</b><i></i></div>
+  <p class="meta">杭州嘉宝丽酒店 · 晚宴 &nbsp;|&nbsp; 请选择一种风格的请帖</p>
+</header>
+
+<main class="grid">
+  <a class="card" href="classic.html">
+    <div class="thumb t-classic">
+      <div class="inner">
+        <span>我 们 结 婚 啦<small>THE WEDDING DAY</small></span>
+      </div>
+      <div class="label">版本一</div>
+    </div>
+    <div class="body">
+      <h2>优雅常规版</h2>
+      <p>米白宣纸质感、宋体排版、香槟金细边与倒计时，适合长辈与同事朋友，正式而温柔。</p>
+      <span class="go">查看请帖</span>
+    </div>
+  </a>
+
+  <a class="card" href="stardew.html">
+    <div class="thumb t-pixel">
+      <div class="sky"><div class="sun"></div></div>
+      <div class="tree"></div>
+      <div class="heart" aria-hidden="true"></div>
+      <div class="ground"></div>
+      <div class="box"><b>我 们 结 婚 啦</b><i>2026.12.20 · 星露谷婚礼</i></div>
+      <div class="label">版本二</div>
+    </div>
+    <div class="body">
+      <h2>星露谷像素版</h2>
+      <p>像素农场场景、木牌对话框、好感度时间线与邮筒回执，适合爱玩游戏的朋友，可爱又特别。</p>
+      <span class="go">查看请帖</span>
+    </div>
+  </a>
+</main>
+
+<footer>两个版本独立可用，可分别发给不同的宾客 · <b>2026.12.20 见</b></footer>
+</body>
+</html>

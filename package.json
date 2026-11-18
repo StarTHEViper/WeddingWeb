@@ -1,0 +1,13 @@
+{
+  "name": "wedding-invite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "婚礼请帖（优雅常规版 + 星露谷像素版）与零依赖回执后台",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

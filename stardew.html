@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>婚礼请柬 · 星露谷版 · 2026.12.20</title>
+<meta name="description" content="2026年12月20日晚，杭州嘉宝丽酒店（杭州市上城区杭海路601号），像素风婚礼请柬，诚邀你参加我们的婚礼。">
+<meta property="og:title" content="婚礼请柬 · 星露谷版">
+<meta property="og:description" content="2026.12.20 晚 · 杭州嘉宝丽酒店 · 期待与你相见">
+<meta property="og:image" content="share.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2E6B3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  /* =========================================================
+     星露谷像素风婚礼请柬
+     ========================================================= */
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --wood-dark:#4A2B14;
+    --wood:#6B4423;
+    --wood-light:#A9713E;
+    --parch:#F7E3BD;
+    --parch-2:#E8CB99;
+    --parch-3:#C89B62;
+    --ink:#4A2B14;
+    --ink-soft:#7A5A38;
+    --cream:#FFF6E0;
+    --gold:#F2C14E;
+    --red:#C9503F;
+    --green:#4E9455;
+    --green-dark:#2E6B3E;
+    --px:'Press Start 2P',"Zpix","Fusion Pixel 12px Proportional SC",'PingFang SC','Microsoft YaHei',monospace;
+    --body:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,-apple-system,sans-serif;
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;color:var(--ink);font-family:var(--body);line-height:1.9;
+    background-color:#3F7C4B;
+    background-image:
+      radial-gradient(120% 70% at 50% 0%,rgba(255,255,255,.12),transparent 60%),
+      repeating-linear-gradient(0deg,rgba(0,0,0,.055) 0 6px,transparent 6px 12px),
+      repeating-linear-gradient(90deg,rgba(0,0,0,.045) 0 6px,transparent 6px 12px),
+      linear-gradient(180deg,#468A54,#2E6B3E 55%,#275C36);
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  /* ---------- 通用像素装饰 ---------- */
+  .px{font-family:var(--px);letter-spacing:.02em}
+  .sec{padding:clamp(44px,7vw,84px) 18px}
+  .wrap{max-width:720px;margin:0 auto}
+
+  .sec-title{
+    display:flex;align-items:center;justify-content:center;gap:12px;
+    margin:0 0 clamp(20px,3.4vw,34px);font-size:clamp(16px,3.6vw,20px);
+    color:var(--cream);letter-spacing:.14em;text-align:center;
+    text-shadow:2px 2px 0 rgba(32,20,8,.55), 0 0 14px rgba(242,193,78,.28);
+  }
+  .sec-title span{color:var(--gold);font-size:.8em}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;width:100%;height:min(88svh,640px);min-height:460px;
+    overflow:hidden;background:#7FBFE8;
+    border-bottom:4px solid var(--wood-dark);
+    box-shadow:0 6px 0 rgba(25,15,6,.35);
+  }
+  .hero canvas{position:absolute;inset:0;width:100%;height:100%;display:block;
+    image-rendering:pixelated;image-rendering:crisp-edges}
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:0;height:46%;pointer-events:none;
+    background:linear-gradient(transparent,rgba(20,24,10,.55));
+  }
+  .ribbon{
+    position:absolute;left:50%;top:16px;transform:translateX(-50%);z-index:4;
+    display:flex;align-items:center;gap:10px;padding:8px 16px;
+    background:var(--wood);border:3px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 2px var(--wood-light),0 4px 0 rgba(25,15,6,.4);
+    color:var(--cream);font-size:10px;letter-spacing:.18em;white-space:nowrap
+  }
+  .ribbon i{color:var(--gold);font-style:normal}
+
+  .hero__ui{
+    position:absolute;left:0;right:0;bottom:clamp(14px,3.5vw,30px);z-index:5;
+    display:flex;flex-direction:column;align-items:center;gap:12px;padding:0 14px
+  }
+  .dialog{
+    position:relative;width:min(94%,560px);background:var(--parch);
+    border:4px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 3px var(--parch-2),inset 0 0 0 5px var(--parch-3),0 6px 0 rgba(25,15,6,.45);
+    padding:16px 20px 22px;
+  }
+  .dialog__who{
+    margin:0 0 8px;font-size:12px;letter-spacing:.2em;color:#8A5A20;
+    display:flex;align-items:center;gap:8px;flex-wrap:wrap
+  }
+  .dialog__who em{color:var(--red);font-style:normal;font-size:13px}
+  .dialog__text{
+    margin:0;font-size:13.5px;line-height:2;color:var(--ink);min-height:4em;letter-spacing:.03em
+  }
+  .dialog__text b{color:var(--red);font-weight:700}
+  .dialog__next{
+    position:absolute;right:14px;bottom:6px;color:#8A5A20;font-size:11px;
+    animation:blink 1.1s steps(2,start) infinite
+  }
+  @keyframes blink{0%,100%{opacity:0}50%{opacity:1}}
+  .scroll-hint{
+    font-size:9.5px;letter-spacing:.2em;color:var(--cream);text-decoration:none;
+    text-shadow:1px 1px 0 rgba(25,15,6,.6);opacity:.9
+  }
+
+  /* ---------- 面板 ---------- */
+  .panel{
+    background:var(--parch);border:4px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 3px var(--parch-2),inset 0 0 0 5px var(--parch-3),0 6px 0 rgba(25,15,6,.4);
+    padding:clamp(20px,4vw,30px);
+  }
+  .panel + .panel{margin-top:22px}
+
+  .stat{list-style:none;margin:0;padding:0;display:grid;gap:0}
+  .stat li{
+    display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;
+    padding:14px 0;border-bottom:2px dashed rgba(122,90,56,.35)
+  }
+  .stat li:last-child{border-bottom:0;padding-bottom:0}
+  .stat li:first-child{padding-top:0}
+  .stat canvas{width:26px;height:26px;image-rendering:pixelated;margin-top:3px}
+  .stat .k{
+    display:block;font-size:10px;letter-spacing:.2em;color:#8A5A20;margin-bottom:4px
+  }
+  .stat .v{display:block;font-size:15px;font-weight:700;letter-spacing:.06em;color:var(--ink)}
+  .stat .s{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:.04em;margin-top:2px}
+
+  /* ---------- 倒计时木牌 ---------- */
+  .plaque{
+    margin-top:24px;padding:18px 16px 20px;text-align:center;
+    background:linear-gradient(180deg,var(--wood-light),var(--wood));
+    border:4px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 2px rgba(255,246,224,.28),0 5px 0 rgba(25,15,6,.4);
+  }
+  .plaque__label{
+    display:block;font-size:10px;letter-spacing:.26em;color:#FFE9BC;margin-bottom:12px;
+    text-shadow:1px 1px 0 rgba(40,22,8,.6)
+  }
+  .plaque__time{display:flex;justify-content:center;align-items:baseline;gap:6px;flex-wrap:wrap}
+  .plaque__time b{
+    font-family:var(--px);font-size:clamp(16px,5vw,22px);color:var(--gold);
+    text-shadow:2px 2px 0 rgba(40,22,8,.75);min-width:1.9em;display:inline-block
+  }
+  .plaque__time i{
+    font-style:normal;font-size:10px;color:#FFE9BC;margin-right:8px;
+    text-shadow:1px 1px 0 rgba(40,22,8,.6)
+  }
+
+  /* ---------- 地图 ---------- */
+  .mapbox{
+    position:relative;border:4px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 3px var(--parch-2);
+    background:#7FB05E;overflow:hidden;margin-bottom:18px
+  }
+  .mapbox canvas{width:100%;display:block;image-rendering:pixelated;height:auto}
+  .addr{
+    display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.9;
+    margin:0 0 6px;letter-spacing:.04em
+  }
+  .addr canvas{width:20px;height:20px;image-rendering:pixelated;flex:0 0 20px;margin-top:4px}
+  .tip{
+    font-size:11.5px;line-height:1.95;color:var(--ink-soft);margin:0 0 18px;
+    padding-top:14px;border-top:2px dashed rgba(122,90,56,.3)
+  }
+
+  .btns{display:grid;gap:10px;grid-template-columns:1fr}
+  @media (min-width:520px){ .btns{grid-template-columns:1fr 1fr} }
+  .btn{
+    appearance:none;cursor:pointer;font:inherit;text-decoration:none;text-align:center;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    padding:13px 14px;font-size:12.5px;letter-spacing:.08em;color:var(--cream);
+    background:linear-gradient(180deg,var(--wood-light),var(--wood));
+    border:3px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 2px rgba(255,246,224,.3),0 4px 0 var(--wood-dark);
+    text-shadow:1px 1px 0 rgba(40,22,8,.65);transition:filter .2s;
+  }
+  .btn:hover{filter:brightness(1.08)}
+  .btn:active{transform:translateY(3px);box-shadow:inset 0 0 0 2px rgba(255,246,224,.3),0 1px 0 var(--wood-dark)}
+  .btn--green{background:linear-gradient(180deg,#6EBB70,#3F8C4A)}
+  .btn--wide{width:100%}
+
+  /* ---------- 好感度事件 ---------- */
+  .events{display:grid;gap:20px}
+  .event{
+    background:var(--parch);border:4px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 3px var(--parch-2),0 5px 0 rgba(25,15,6,.35);
+    padding:16px;display:grid;gap:14px;grid-template-columns:1fr
+  }
+  @media (min-width:600px){ .event{grid-template-columns:132px 1fr;align-items:center} }
+  .frame{
+    position:relative;aspect-ratio:1;overflow:hidden;background:#D9C39A;
+    border:3px solid var(--wood-dark);box-shadow:inset 0 0 0 2px var(--parch-2)
+  }
+  .frame img{width:100%;height:100%;object-fit:cover}
+  .frame.is-empty{
+    display:grid;place-items:center;
+    background:
+      repeating-linear-gradient(45deg,rgba(255,255,255,.35) 0 8px,rgba(255,255,255,0) 8px 16px),
+      #DCC79F;
+  }
+  .frame.is-empty::after{
+    content:"放照片";font-size:10px;letter-spacing:.16em;color:#8A5A20
+  }
+  .event__year{font-family:var(--px);font-size:11px;color:#8A5A20;letter-spacing:.06em}
+  .event h3{margin:6px 0 6px;font-size:15px;letter-spacing:.14em;color:var(--ink)}
+  .event p{margin:0;font-size:12.5px;line-height:1.95;color:var(--ink-soft)}
+  .hearts{color:var(--red);font-size:12px;letter-spacing:3px;margin-top:8px;display:block}
+  .hearts .off{color:rgba(122,90,56,.3)}
+
+  /* ---------- 表单 ---------- */
+  .field{display:grid;gap:7px;margin-bottom:16px}
+  .field > label{font-size:11px;letter-spacing:.16em;color:#8A5A20}
+  .field > label em{color:var(--red);font-style:normal}
+  .field input[type=text],.field select,.field textarea{
+    font:inherit;font-size:13.5px;color:var(--ink);background:#FFF9E8;
+    border:3px solid var(--parch-3);
+    box-shadow:inset 0 3px 0 rgba(122,90,56,.14);
+    padding:10px 12px;width:100%;border-radius:0;letter-spacing:.03em;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{
+    outline:none;border-color:var(--wood-light);box-shadow:inset 0 3px 0 rgba(122,90,56,.14),0 0 0 3px rgba(242,193,78,.4)
+  }
+  .field textarea{resize:vertical;min-height:76px;line-height:1.8}
+  .opts{display:flex;gap:10px;flex-wrap:wrap}
+  .opt{position:relative;flex:1 1 130px}
+  .opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+  .opt span{
+    display:flex;align-items:center;justify-content:center;gap:6px;
+    padding:11px 10px;font-size:12.5px;letter-spacing:.08em;color:var(--ink-soft);
+    background:#FFF9E8;border:3px solid var(--parch-3);
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,.5);transition:.18s
+  }
+  .opt input:checked + span{
+    background:linear-gradient(180deg,#6EBB70,#3F8C4A);color:var(--cream);
+    border-color:var(--wood-dark);text-shadow:1px 1px 0 rgba(30,18,8,.5)
+  }
+  .opt input:focus-visible + span{box-shadow:0 0 0 3px rgba(242,193,78,.6)}
+  .form-err{margin:0 0 12px;font-size:12px;color:#B23B2E;letter-spacing:.04em}
+  .form-err[hidden]{display:none}
+  .form-hint{
+    margin:12px 0 0;font-size:11px;line-height:1.9;color:var(--ink-soft);text-align:center;letter-spacing:.03em
+  }
+
+  .letter{
+    margin-top:18px;padding:18px;background:#FFF9E8;
+    border:3px dashed var(--parch-3);display:grid;gap:12px
+  }
+  .letter[hidden]{display:none}
+  .letter__status{
+    margin:0;font-size:12px;letter-spacing:.04em;line-height:1.8;min-height:1.8em;color:var(--ink-soft)
+  }
+  .letter__status.ok{color:#2F6B4A;font-weight:700}
+  .letter__status.warn{color:#B06A2C;font-weight:700}
+  .letter pre{
+    margin:0;font-family:var(--body);font-size:12.5px;line-height:2;
+    white-space:pre-wrap;word-break:break-word;color:var(--ink);letter-spacing:.03em
+  }
+  .letter .btns{grid-template-columns:1fr 1fr}
+
+  /* ---------- 页脚 ---------- */
+  .foot{
+    text-align:center;padding:clamp(40px,6vw,72px) 18px clamp(34px,5vw,54px);
+    color:var(--cream);text-shadow:1px 1px 0 rgba(30,18,8,.5)
+  }
+  .foot__t{font-size:13.5px;letter-spacing:.16em;margin:0 0 12px}
+  .foot__names{
+    font-size:16px;letter-spacing:.14em;margin:0;color:var(--gold)
+  }
+  .foot__names em{color:var(--red);font-style:normal;padding:0 8px}
+  .foot__meta{font-size:10px;letter-spacing:.18em;margin:12px 0 0;color:#E7F0DD;opacity:.85}
+  .foot__switch{margin:24px 0 0;font-size:11px;letter-spacing:.1em;color:#E7F0DD}
+  .foot__switch a{text-decoration:none;border-bottom:2px dotted rgba(255,246,224,.5)}
+  .foot__switch a:hover{color:var(--gold)}
+
+  /* ---------- Toast ---------- */
+  .toast{
+    position:fixed;left:50%;bottom:28px;transform:translate(-50%,14px);z-index:90;
+    background:var(--parch);border:3px solid var(--wood-dark);
+    box-shadow:inset 0 0 0 2px var(--parch-2),0 5px 0 rgba(25,15,6,.45);
+    padding:11px 20px;font-size:12px;letter-spacing:.06em;color:var(--ink);
+    opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;
+    white-space:nowrap;max-width:90vw;overflow:hidden;text-overflow:ellipsis
+  }
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+
+  @media (prefers-reduced-motion:reduce){
+    .dialog__next{animation:none;opacity:1}
+    *{transition:none!important}
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero" id="top">
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <div class="ribbon"><i>✦</i> 婚礼请柬 <i>✦</i></div>
+
+  <div class="hero__ui">
+    <div class="dialog">
+      <p class="dialog__who">
+        <span data-cfg="bride">新娘</span><em>♥</em><span data-cfg="groom">新郎</span>
+        <span style="margin-left:auto;font-size:10px;opacity:.8">2026.12.20</span>
+      </p>
+      <p class="dialog__text" id="typeText">我们要结婚啦。</p>
+      <span class="dialog__next" aria-hidden="true">▼</span>
+    </div>
+    <a class="scroll-hint" href="#info">▼ 向下滚动 了解更多 ▼</a>
+  </div>
+</header>
+
+<main>
+  <!-- ==================== 婚礼信息 ==================== -->
+  <section class="sec" id="info">
+    <div class="wrap">
+      <h2 class="sec-title"><span>✦</span> 婚礼信息 <span>✦</span></h2>
+
+      <div class="panel">
+        <ul class="stat">
+          <li>
+            <canvas class="ico" data-icon="calendar" width="8" height="8" aria-hidden="true"></canvas>
+            <div>
+              <span class="k">日期 DATE</span>
+              <span class="v" data-cfg="dateFull">2026年12月20日</span>
+              <span class="s" data-cfg="weekday2">星期日 · 晚宴</span>
+            </div>
+          </li>
+          <li>
+            <canvas class="ico" data-icon="clock" width="8" height="8" aria-hidden="true"></canvas>
+            <div>
+              <span class="k">时间 TIME</span>
+              <span class="v" data-cfg="timeBig">18:18</span>
+              <span class="s" data-cfg="timeTip">晚宴开始 · 建议提前 15 分钟到场</span>
+            </div>
+          </li>
+          <li>
+            <canvas class="ico" data-icon="pin" width="8" height="8" aria-hidden="true"></canvas>
+            <div>
+              <span class="k">地点 PLACE</span>
+              <span class="v" data-cfg="venue">杭州嘉宝丽酒店</span>
+              <span class="s" data-cfg="address">杭州市上城区杭海路601号</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="plaque">
+          <span class="plaque__label">✦ 距婚礼还有 ✦</span>
+          <div class="plaque__time" id="countdown" data-target="2026-12-20T18:18:00+08:00">
+            <b data-cd="d">--</b><i>天</i>
+            <b data-cd="h">--</b><i>时</i>
+            <b data-cd="m">--</b><i>分</i>
+            <b data-cd="s">--</b><i>秒</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 地点导航 ==================== -->
+  <section class="sec" id="map" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="sec-title"><span>✦</span> 地点与导航 <span>✦</span></h2>
+
+      <div class="panel">
+        <div class="mapbox"><canvas id="miniMap" width="64" height="40" aria-hidden="true"></canvas></div>
+
+        <p class="addr">
+          <canvas width="8" height="8" data-icon="pin" aria-hidden="true"></canvas>
+          <span data-cfg="venue">杭州嘉宝丽酒店</span>
+        </p>
+        <p class="addr">
+          <span style="flex:0 0 20px"></span>
+          <span data-cfg="address">杭州市上城区杭海路601号</span>
+        </p>
+        <p class="tip">
+          宴会厅在酒店内，跟着指引牌走就好，也可以直接问大堂的工作人员。<br>
+          自驾的朋友可以把车停进酒店停车场；建议大家提前 15 分钟到，签到领喜糖。
+        </p>
+
+        <div class="btns">
+          <a class="btn btn--green" id="btnAmap" href="#" target="_blank" rel="noopener">高德地图 · 导航</a>
+          <a class="btn" id="btnBaidu" href="#" target="_blank" rel="noopener">百度地图 · 查看</a>
+        </div>
+        <div class="btns" style="margin-top:10px;grid-template-columns:1fr">
+          <button class="btn" type="button" id="btnCopyAddr">复制地址</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 好感度事件 ==================== -->
+  <section class="sec" id="story" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="sec-title"><span>✦</span> 好感度事件 <span>✦</span></h2>
+
+      <div class="events" id="events">
+        <article class="event">
+          <div class="frame is-empty" data-photo="初遇"></div>
+          <div>
+            <span class="event__year">2021 · SPRING</span>
+            <h3>＋ 初遇</h3>
+            <p>西湖边的一场雨，一把伞下挤了两个人。好感度 +1。</p>
+            <span class="hearts" data-hearts="1"></span>
+          </div>
+        </article>
+        <article class="event">
+          <div class="frame is-empty" data-photo="同行"></div>
+          <div>
+            <span class="event__year">2022 · SUMMER</span>
+            <h3>＋ 同行</h3>
+            <p>一起走过的第 100 个周末，从河坊街吃到滨江。好感度 +1。</p>
+            <span class="hearts" data-hearts="2"></span>
+          </div>
+        </article>
+        <article class="event">
+          <div class="frame is-empty" data-photo="约定"></div>
+          <div>
+            <span class="event__year">2025 · AUTUMN</span>
+            <h3>＋ 约定</h3>
+            <p>在灵隐的清晨说了一句“以后”。于是有了这场婚礼。好感度 +1。</p>
+            <span class="hearts" data-hearts="3"></span>
+          </div>
+        </article>
+        <article class="event">
+          <div class="frame is-empty" data-photo="余年"></div>
+          <div>
+            <span class="event__year">2026 · WINTER</span>
+            <h3>＋ 余年</h3>
+            <p>从今天开始的每一天，都想请你来做个见证。好感度 MAX。</p>
+            <span class="hearts" data-hearts="5"></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 回执 ==================== -->
+  <section class="sec" id="rsvp" style="padding-top:0">
+    <div class="wrap">
+      <h2 class="sec-title"><span>✦</span> 投递回执 <span>✦</span></h2>
+
+      <div class="panel">
+        <form id="rsvpForm" novalidate>
+          <div class="field">
+            <label for="f-name">你的名字 <em>*</em></label>
+            <input id="f-name" name="name" type="text" autocomplete="name" placeholder="请输入姓名">
+          </div>
+          <div class="field">
+            <label for="f-contact">手机号 / 微信</label>
+            <input id="f-contact" name="contact" type="text" placeholder="选填，方便与您确认">
+          </div>
+          <div class="field">
+            <label>是否出席 <em>*</em></label>
+            <div class="opts">
+              <label class="opt"><input type="radio" name="attend" value="欣然前往" checked><span>♥ 欣然前往</span></label>
+              <label class="opt"><input type="radio" name="attend" value="遗憾缺席"><span>✕ 遗憾缺席</span></label>
+            </div>
+          </div>
+          <div class="field" id="guestField">
+            <label for="f-guests">同行人数</label>
+            <select id="f-guests" name="guests">
+              <option value="1">仅我一人</option>
+              <option value="2">2 位</option>
+              <option value="3">3 位</option>
+              <option value="4">4 位及以上</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-note">留言 / 忌口</label>
+            <textarea id="f-note" name="note" rows="3" placeholder="想对我们说的话，或者饮食禁忌"></textarea>
+          </div>
+          <p class="form-err" id="formErr" role="alert" hidden></p>
+          <button class="btn btn--green btn--wide" type="submit">✉ 投进邮筒</button>
+          <p class="form-hint">点「投进邮筒」我们会立刻收到；回执也会复制一份，方便你留个底。</p>
+
+          <div class="letter" id="letter" hidden>
+            <p class="letter__status" id="letterStatus"></p>
+            <pre id="letterText"></pre>
+            <div class="btns">
+              <button class="btn" type="button" id="btnCopyLetter">复制回执</button>
+              <button class="btn" type="button" id="btnReset">重新填写</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot__t">期待与你在冬日里相见</p>
+  <p class="foot__names">
+    <span data-cfg="bride">新娘</span><em>♥</em><span data-cfg="groom">新郎</span>
+  </p>
+  <p class="foot__meta" data-cfg="footMeta">2026.12.20 · 杭州嘉宝丽酒店</p>
+  <p class="foot__switch">
+    <a href="classic.html">换个风格：优雅常规版 →</a> &nbsp;·&nbsp; <a href="index.html">版本选择</a>
+  </p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* =========================================================
+   ★ 只需要改这里 ★
+   ========================================================= */
+const CONFIG = {
+  bride: '新娘',
+  groom: '新郎',
+  dateNum: '2026.12.20',
+  dateFull: '2026年12月20日',
+  weekday2: '星期日 · 晚宴',
+  timeBig: '18:18',
+  timeTip: '晚宴开始 · 建议提前 15 分钟到场',
+  venue: '杭州嘉宝丽酒店',
+  address: '杭州市上城区杭海路601号',
+  dateISO: '2026-12-20T18:18:00+08:00',
+  footMeta: '2026.12.20 · 杭州嘉宝丽酒店',
+  dialogText: '我们要结婚啦！2026 年 12 月 20 日晚上，在杭州嘉宝丽酒店摆一桌喜酒，希望你一定来呀～',
+  /* —— 回执 ——
+     rsvpMode: 'api'       → 提交到后台（推荐，你能收到并统计人数）
+     rsvpMode: 'clipboard' → 只复制文字，不给后台发（没有后台时用这个） */
+  rsvpMode: 'api',
+  apiUrl: '/api/rsvp',
+  photos: [],                    // 例如 ['assets/1.jpg','assets/2.jpg','assets/3.jpg','assets/4.jpg']
+  mapQuery: '杭州嘉宝丽酒店'
+};
+/* ========================================================= */
+
+(function () {
+  'use strict';
+  const $  = (s, r) => (r || document).querySelector(s);
+  const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+  const REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ============ 1. 文案绑定 ============ */
+  $$('[data-cfg]').forEach(function (el) {
+    const v = CONFIG[el.dataset.cfg];
+    if (typeof v === 'string') el.textContent = v;
+  });
+
+  /* ============ 2. 像素图标 ============ */
+  const PAL = {
+    k: '#4A2B14', p: '#FFF6E0', r: '#C9503F', g: '#F2C14E',
+    w: '#E8CB99', b: '#5A9BC9', d: '#8A5A20'
+  };
+  const ICONS = {
+    calendar: [
+      'kkkkkkkk',
+      'krrrrrrk',
+      'kkkkkkkk',
+      'kppppppk',
+      'kpkppkpk',
+      'kppppppk',
+      'kpkkpkpk',
+      'kkkkkkkk'
+    ],
+    clock: [
+      '..kkkk..',
+      '.kppppk.',
+      'kppkkppk',
+      'kppkkppk',
+      'kppkkppk',
+      'kppppppk',
+      '.kppppk.',
+      '..kkkk..'
+    ],
+    pin: [
+      '..rrrr..',
+      '.rrrrrr.',
+      'rrrpprrr',
+      'rrrpprrr',
+      '.rrrrrr.',
+      '..rrrr..',
+      '...rr...',
+      '...rr...'
+    ]
+  };
+  $$('canvas[data-icon]').forEach(function (cv) {
+    const map = ICONS[cv.dataset.icon];
+    if (!map) return;
+    const c = cv.getContext('2d');
+    for (let y = 0; y < map.length; y++) {
+      for (let x = 0; x < map[y].length; x++) {
+        const ch = map[y][x];
+        if (ch === '.') continue;
+        c.fillStyle = PAL[ch] || '#4A2B14';
+        c.fillRect(x, y, 1, 1);
+      }
+    }
+  });
+
+  /* ============ 3. 小地图 ============ */
+  (function miniMap() {
+    const cv = $('#miniMap');
+    if (!cv) return;
+    const c = cv.getContext('2d');
+    const W = cv.width, H = cv.height;
+    c.fillStyle = '#7FB05E'; c.fillRect(0, 0, W, H);
+    // 田垄
+    for (let y = 0; y < H; y += 4) {
+      c.fillStyle = 'rgba(0,0,0,.05)';
+      c.fillRect(0, y, W, 2);
+    }
+    // 小河
+    for (let y = 0; y < H; y++) {
+      const x = Math.round(7 + Math.sin(y / 5) * 3);
+      c.fillStyle = '#5A9BC9'; c.fillRect(x, y, 4, 1);
+      c.fillStyle = '#8FC8E4'; c.fillRect(x, y, 1, 1);
+    }
+    // 小树林
+    const trees = [[16, 8], [21, 12], [24, 7], [17, 16], [26, 17], [13, 24]];
+    trees.forEach(function (t) {
+      c.fillStyle = '#2E7D43'; c.fillRect(t[0] - 2, t[1] - 3, 5, 4);
+      c.fillStyle = '#3E9455'; c.fillRect(t[0] - 1, t[1] - 3, 2, 2);
+      c.fillStyle = '#6B4423'; c.fillRect(t[0], t[1], 1, 2);
+    });
+    // 小路
+    for (let x = 20; x < W; x++) {
+      const y = Math.round(24 + Math.sin((x - 20) / 7) * 3);
+      c.fillStyle = '#C89B62'; c.fillRect(x, y, 1, 3);
+      c.fillStyle = '#D9B078'; c.fillRect(x, y, 1, 1);
+    }
+    // 酒店
+    c.fillStyle = '#C98F51'; c.fillRect(44, 13, 12, 9);
+    c.fillStyle = '#8C3B2E'; c.fillRect(43, 11, 14, 3);
+    c.fillStyle = '#A34434'; c.fillRect(45, 10, 10, 1);
+    c.fillStyle = '#FFD980'; c.fillRect(46, 16, 2, 2); c.fillRect(51, 16, 2, 2);
+    c.fillStyle = '#6B4423'; c.fillRect(49, 19, 3, 3);
+    // 图钉
+    c.fillStyle = '#C9503F';
+    c.fillRect(49, 6, 3, 3); c.fillRect(48, 8, 5, 2); c.fillRect(50, 10, 1, 2);
+    c.fillStyle = '#FFF6E0'; c.fillRect(50, 7, 1, 1);
+  })();
+
+  /* ============ 4. 地图链接 ============ */
+  const q = encodeURIComponent(CONFIG.mapQuery);
+  $('#btnAmap').href  = 'https://uri.amap.com/search?keyword=' + q + '&city=' + encodeURIComponent('杭州') + '&callnative=1';
+  $('#btnBaidu').href = 'https://api.map.baidu.com/geocoder?address=' +
+    encodeURIComponent(CONFIG.venue + CONFIG.address) + '&output=html&src=webapp.wedding';
+
+  /* ============ 5. 照片 & 好感度 ============ */
+  $$('[data-photo]').forEach(function (el, i) {
+    const src = (CONFIG.photos || [])[i];
+    if (!src) return;
+    const img = new Image();
+    img.src = src;
+    img.alt = el.dataset.photo || '';
+    img.loading = 'lazy';
+    img.onload = function () { el.classList.remove('is-empty'); el.appendChild(img); };
+  });
+  $$('[data-hearts]').forEach(function (el) {
+    const n = Math.min(5, parseInt(el.dataset.hearts, 10) || 0);
+    let html = '';
+    for (let i = 0; i < 5; i++) html += (i < n ? '♥' : '<span class="off">♥</span>');
+    el.innerHTML = html;
+  });
+
+  /* ============ 6. 打字机 ============ */
+  (function typewriter() {
+    const el = $('#typeText');
+    if (!el) return;
+    const text = CONFIG.dialogText;
+    if (REDUCED) { el.textContent = text; return; }
+    let i = 0;
+    (function step() {
+      el.textContent = text.slice(0, i++);
+      if (i <= text.length) setTimeout(step, 52);
+    })();
+  })();
+
+  /* ============ 7. 倒计时 ============ */
+  const cdEl = $('#countdown');
+  const target = new Date(CONFIG.dateISO).getTime();
+  const pad = n => String(n).padStart(2, '0');
+  function tick() {
+    const diff = target - Date.now();
+    if (diff <= 0) {
+      const label = $('.plaque__label');
+      if (label) label.textContent = '婚礼已经完成 · 谢谢你来过';
+      ['d', 'h', 'm', 's'].forEach(k => { $('[data-cd="' + k + '"]', cdEl).textContent = '00'; });
+      return;
+    }
+    $('[data-cd="d"]', cdEl).textContent = pad(Math.floor(diff / 864e5));
+    $('[data-cd="h"]', cdEl).textContent = pad(Math.floor(diff % 864e5 / 36e5));
+    $('[data-cd="m"]', cdEl).textContent = pad(Math.floor(diff % 36e5 / 6e4));
+    $('[data-cd="s"]', cdEl).textContent = pad(Math.floor(diff % 6e4 / 1e3));
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* ============ 8. Toast / 复制 ============ */
+  let toastTimer;
+  function toast(msg) {
+    const el = $('#toast');
+    el.textContent = msg;
+    el.classList.add('on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => el.classList.remove('on'), 2200);
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    return new Promise(function (resolve, reject) {
+      try {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta); resolve();
+      } catch (e) { reject(e); }
+    });
+  }
+  $('#btnCopyAddr').addEventListener('click', function () {
+    copyText(CONFIG.venue + CONFIG.address)
+      .then(() => toast('地址已复制'))
+      .catch(() => toast('复制失败，请长按地址手动复制'));
+  });
+
+  /* ============ 9. 回执 ============ */
+  const form = $('#rsvpForm');
+  const errEl = $('#formErr');
+  const letterBox = $('#letter');
+  const letterText = $('#letterText');
+  let lastText = '';
+
+  const statusEl = $('#letterStatus');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = $('#f-name').value.trim();
+    const contact = $('#f-contact').value.trim();
+    const note = $('#f-note').value.trim();
+    const attend = (form.querySelector('input[name="attend"]:checked') || {}).value || '欣然前往';
+    const guestSel = $('#f-guests');
+    const guests = parseInt(guestSel.value, 10) || 1;
+    const guestsLabel = guestSel.options[guestSel.selectedIndex].textContent.trim();
+
+    if (!name) {
+      errEl.hidden = false;
+      errEl.textContent = '请先填一下你的名字，方便我们安排座位～';
+      $('#f-name').focus();
+      return;
+    }
+    errEl.hidden = true;
+
+    lastText = [
+      '【婚礼回执】',
+      '姓名：' + name,
+      '出席情况：' + attend,
+      attend === '欣然前往' ? '同行人数：' + guestsLabel : null,
+      contact ? '联系方式：' + contact : null,
+      note ? '留言：' + note : null,
+      '—— ' + CONFIG.dateFull + ' · ' + CONFIG.venue + '（' + CONFIG.address + '）'
+    ].filter(Boolean).join('\n');
+
+    letterText.textContent = lastText;
+    letterBox.hidden = false;
+    statusEl.className = 'letter__status';
+    statusEl.textContent = '正在送出…';
+    letterBox.scrollIntoView({ behavior: REDUCED ? 'auto' : 'smooth', block: 'center' });
+
+    sendReceipt({
+      name: name,
+      contact: contact,
+      attend: attend,
+      guests: guests,
+      note: note,
+      source: 'stardew'
+    });
+  });
+
+  /* 送到后台；失败则退回「复制文字」模式 */
+  function sendReceipt(payload) {
+    if (CONFIG.rsvpMode !== 'api') {
+      statusEl.textContent = '回执已复制，发给我们吧～';
+      copyText(lastText).catch(function () {});
+      return;
+    }
+    fetch(CONFIG.apiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    }).then(function (data) {
+      if (!data || !data.ok) throw new Error('bad response');
+      statusEl.className = 'letter__status ok';
+      statusEl.textContent = (data.updated ? '✓ 回执已更新，我们收到啦' : '✓ 回执已送达，我们收到啦') +
+        '（已有 ' + (data.stats ? data.stats.goingPeople : 0) + ' 位亲友确认出席）';
+      copyText(lastText).catch(function () {});
+    }).catch(function (e) {
+      console.warn('[rsvp] 提交失败，改用复制模式', e);
+      statusEl.className = 'letter__status warn';
+      statusEl.textContent = '⚠ 网络没通，回执已复制，请直接发给我们';
+      copyText(lastText)
+        .then(function () { toast('回执已复制，发给我们吧～'); })
+        .catch(function () { toast('请点击下方「复制回执」'); });
+    });
+  }
+
+  $('#btnCopyLetter').addEventListener('click', function () {
+    copyText(lastText).then(() => toast('回执已复制')).catch(() => toast('复制失败，请手动选中'));
+  });
+  $('#btnReset').addEventListener('click', function () {
+    letterBox.hidden = true;
+    form.reset();
+    $('#guestField').style.display = '';
+    errEl.hidden = true;
+  });
+  $$('input[name="attend"]').forEach(function (r) {
+    r.addEventListener('change', function () {
+      $('#guestField').style.display = (r.checked && r.value === '遗憾缺席') ? 'none' : '';
+    });
+  });
+
+  /* =========================================================
+     10. 像素农场场景（canvas）
+     ========================================================= */
+  const cv = $('#scene');
+  const ctx = cv.getContext('2d');
+  let PX = 4;                   // 1 逻辑像素 = PX 个 css 像素
+  let W = 0, H = 0, S = 2, horizon = 0, running = false, rafId = 0, t0 = performance.now();
+
+  const BRIDE = {
+    rows: [
+      '....vvvv....',
+      '...vvvvvv...',
+      '...vhhhhv...',
+      '...hhhhhh...',
+      '...hssssh...',
+      '...sesses...',
+      '...ssssss...',
+      '...srrrrs...',
+      '....ssss....',
+      '...wwwwww...',
+      '..wwwwwwww..',
+      '..wwwwwwww..',
+      '..wwwbbwww..',
+      '..wwwbbwww..',
+      '..wwwwwwww..',
+      '.wwwwwwwwww.',
+      '.wwwwwwwwww.',
+      '.wwwwwwwwww.',
+      '.wwwwwwwwww.',
+      '.www.ww.www.'
+    ],
+    pal: { v: '#DCDAF0', h: '#3B2318', s: '#F3CBA6', e: '#2A1A12', r: '#E9A0A0', w: '#FFFDF5', b: '#C9503F' }
+  };
+  const GROOM = {
+    rows: [
+      '....hhhh....',
+      '...hhhhhh...',
+      '...hhhhhh...',
+      '...hssssh...',
+      '...sesses...',
+      '...ssssss...',
+      '....ssss....',
+      '...kkkkkk...',
+      '..kkwggwkk..',
+      '..kkkwwkkk..',
+      '..kkkkkkkk..',
+      '..kkkkkkkk..',
+      '..kkkkkkkk..',
+      '..kkkkkkkk..',
+      '..kkkkkkkk..',
+      '..kkkkkkkk..',
+      '..kkkkkkkk..',
+      '..kkk..kkk..',
+      '..kkk..kkk..',
+      '.kkkk..kkkk.'
+    ],
+    pal: { h: '#2E1E14', s: '#F3CBA6', e: '#2A1A12', k: '#2B2A33', w: '#FFFDF5', g: '#F2C14E' }
+  };
+
+  function mulberry32(a) {
+    return function () {
+      a |= 0; a = a + 0x6D2B79F5 | 0;
+      let t = Math.imul(a ^ a >>> 15, 1 | a);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  const rnd = mulberry32(20261220);
+  const STARS = Array.from({ length: 24 }, () => ({ x: rnd(), y: rnd() * 0.40, p: rnd() * 6.28 }));
+  const CLOUDS = Array.from({ length: 4 }, () => ({ x: rnd(), y: 0.10 + rnd() * 0.20, w: 5 + Math.floor(rnd() * 6), p: rnd() * 6.28 }));
+  const FLOWERS = Array.from({ length: 36 }, () => ({ x: rnd(), y: rnd(), c: ['#F2C14E', '#FFF6E0', '#E58FA0'][Math.floor(rnd() * 3)] }));
+
+  const SKY = [
+    [0.00, '#2E4E8F'], [0.15, '#4A6BB0'], [0.33, '#8E86C4'],
+    [0.52, '#D8948E'], [0.68, '#F3B87E'], [0.85, '#FFD9A0']
+  ];
+
+  function hex2rgb(h) {
+    h = h.replace('#', '');
+    return [parseInt(h.slice(0, 2), 16), parseInt(h.slice(2, 4), 16), parseInt(h.slice(4, 6), 16)];
+  }
+  function mix(a, b, t) {
+    const A = hex2rgb(a), B = hex2rgb(b);
+    return 'rgb(' + Math.round(A[0] + (B[0] - A[0]) * t) + ',' +
+                    Math.round(A[1] + (B[1] - A[1]) * t) + ',' +
+                    Math.round(A[2] + (B[2] - A[2]) * t) + ')';
+  }
+
+  function drawSky() {
+    for (let y = 0; y < horizon; y++) {
+      const p = y / horizon;
+      let i = 0;
+      while (i < SKY.length - 2 && p > SKY[i + 1][0]) i++;
+      const a = SKY[i], b = SKY[i + 1];
+      const k = Math.min(1, Math.max(0, (p - a[0]) / (b[0] - a[0] || 1)));
+      ctx.fillStyle = mix(a[1], b[1], k);
+      ctx.fillRect(0, y, W, 1);
+    }
+  }
+
+  function drawStars(t) {
+    STARS.forEach(function (s) {
+      if (s.y * horizon > horizon * 0.55) return;
+      const a = 0.35 + 0.45 * Math.abs(Math.sin(t / 1400 + s.p));
+      ctx.fillStyle = 'rgba(255,246,224,' + a.toFixed(2) + ')';
+      ctx.fillRect(Math.round(s.x * W), Math.round(s.y * horizon), 1, 1);
+    });
+  }
+
+  function pxDisc(cx, cy, r, color) {
+    ctx.fillStyle = color;
+    for (let y = -r; y <= r; y++) {
+      for (let x = -r; x <= r; x++) {
+        if (x * x + y * y <= r * r + r * 0.6) ctx.fillRect(cx + x, cy + y, 1, 1);
+      }
+    }
+  }
+
+  function drawSun(t) {
+    const cx = Math.round(W * 0.76);
+    const cy = Math.round(horizon * 0.62);
+    const r = Math.max(3, Math.round(H * 0.05));
+    pxDisc(cx, cy, Math.round(r * 2.2), 'rgba(255,232,163,.16)');
+    pxDisc(cx, cy, Math.round(r * 1.55), 'rgba(255,232,163,.28)');
+    pxDisc(cx, cy, r, '#FFE8A3');
+  }
+
+  function drawClouds(t) {
+    CLOUDS.forEach(function (c) {
+      const x = Math.round(((c.x + t / 90000) % 1.2 - 0.1) * W);
+      const y = Math.round(c.y * horizon);
+      const w = c.w, h = Math.max(2, Math.round(w * 0.45));
+      ctx.fillStyle = 'rgba(255,240,220,.85)';
+      ctx.fillRect(x, y, w, h);
+      ctx.fillRect(x + 2, y - 1, w - 3, h);
+      ctx.fillStyle = 'rgba(255,235,215,.6)';
+      ctx.fillRect(x + 1, y + h, w - 2, 1);
+    });
+  }
+
+  function drawHill(yBase, amp, color, freq, phase) {
+    ctx.fillStyle = color;
+    for (let x = 0; x < W; x++) {
+      const y = Math.round(yBase - Math.sin(x / W * 6.283 * freq + phase) * amp);
+      ctx.fillRect(x, y, 1, H - y);
+    }
+  }
+
+  function drawHouse(x, baseY, s) {
+    const put = (cx, cy, cw, ch, col) => { ctx.fillStyle = col; ctx.fillRect(x + cx * s, baseY + cy * s, cw * s, ch * s); };
+    put(0, -8, 11, 8, '#C98F51');
+    put(-1, -10, 13, 2, '#8C3B2E');
+    put(1, -11, 9, 1, '#A34434');
+    put(8, -13, 2, 3, '#7B4A24');
+    put(4, -5, 3, 5, '#6B4423');
+    put(1, -7, 2, 2, '#FFD980');
+    put(8, -7, 2, 2, '#FFD980');
+  }
+
+  function drawGround() {
+    ctx.fillStyle = '#4E9455';
+    ctx.fillRect(0, horizon, W, H - horizon);
+    for (let x = 0; x < W; x += 4) {
+      for (let y = horizon; y < H; y += 4) {
+        if (((x / 4) + (y / 4)) % 2 === 0) {
+          ctx.fillStyle = 'rgba(0,0,0,.05)';
+          ctx.fillRect(x, y, 4, 4);
+        }
+      }
+    }
+    ctx.fillStyle = '#6FB36B';
+    ctx.fillRect(0, horizon, W, 1);
+    FLOWERS.forEach(function (f) {
+      const x = Math.round(f.x * W);
+      const y = Math.round(horizon + 3 + f.y * (H - horizon - 6));
+      ctx.fillStyle = f.c;
+      ctx.fillRect(x, y, 1, 1);
+    });
+  }
+
+  function drawFence(y, s) {
+    const post = Math.max(2, s);
+    ctx.fillStyle = '#7B4A24';
+    for (let x = Math.round(W * 0.02); x < W * 0.98; x += post * 5) {
+      ctx.fillRect(x, y - post * 3, post, post * 3 + 1);
+    }
+    ctx.fillStyle = '#8C5A2E';
+    ctx.fillRect(0, y - post * 2, W, Math.max(1, Math.round(post * 0.7)));
+    ctx.fillRect(0, y - post, W, Math.max(1, Math.round(post * 0.7)));
+  }
+
+  function drawLights(y, s, t) {
+    const x0 = Math.round(W * 0.05), x1 = Math.round(W * 0.95);
+    const sag = Math.max(2, Math.round(H * 0.02));
+    for (let x = x0; x <= x1; x++) {
+      const p = (x - x0) / (x1 - x0);
+      const ly = y + Math.round(Math.sin(p * Math.PI) * sag);
+      ctx.fillStyle = 'rgba(60,36,18,.85)';
+      ctx.fillRect(x, ly, 1, 1);
+      if ((x - x0) % Math.max(10, s * 8) === 0) {
+        const flick = 0.55 + 0.45 * Math.abs(Math.sin(t / 420 + p * 6));
+        ctx.fillStyle = 'rgba(255,214,120,' + (0.16 * flick).toFixed(2) + ')';
+        ctx.fillRect(x - 2, ly, 5, 1); ctx.fillRect(x, ly - 2, 1, 5);
+        ctx.fillStyle = 'rgba(255,214,120,' + (0.3 * flick).toFixed(2) + ')';
+        ctx.fillRect(x - 1, ly - 1, 3, 3);
+        ctx.fillStyle = '#FFE9A8';
+        ctx.fillRect(x, ly, 1, 1);
+      }
+    }
+  }
+
+  function drawTree(cx, baseY, s) {
+    const put = (x, y, w, h, col) => { ctx.fillStyle = col; ctx.fillRect(cx + x * s, baseY + y * s, w * s, h * s); };
+    put(-1, -5, 2, 5, '#6B4423');
+    put(-4, -9, 8, 4, '#2E7D43');
+    put(-3, -12, 6, 3, '#34883F');
+    put(-2, -14, 4, 2, '#2E7D43');
+    put(-3, -10, 2, 2, '#3E9455');
+    put(1, -13, 2, 2, '#3E9455');
+  }
+
+  function drawSprite(sprite, ox, oy, scale) {
+    const rows = sprite.rows;
+    ctx.save();
+    ctx.translate(Math.round(ox), Math.round(oy));
+    ctx.scale(scale, scale);
+    for (let y = 0; y < rows.length; y++) {
+      const row = rows[y];
+      for (let x = 0; x < row.length; x++) {
+        const ch = row[x];
+        if (ch === '.') continue;
+        const col = sprite.pal[ch];
+        if (!col) continue;
+        ctx.fillStyle = col;
+        ctx.fillRect(x, y, 1, 1);
+      }
+    }
+    ctx.restore();
+  }
+
+  function drawCouple(t, s, baseY) {
+    const bw = 12 * s, bh = 20 * s;
+    const gap = Math.max(2, Math.round(s * 1.5));
+    const leftX = Math.round(W / 2 - bw - gap);
+    const rightX = Math.round(W / 2 + gap);
+    const bobA = REDUCED ? 0 : Math.round(Math.sin(t / 620));
+    const bobB = REDUCED ? 0 : Math.round(Math.sin(t / 620 + Math.PI));
+
+    // 影子
+    ctx.fillStyle = 'rgba(0,0,0,.16)';
+    ctx.fillRect(leftX + 2, baseY, bw - 4, Math.max(1, Math.round(s * 0.6)));
+    ctx.fillRect(rightX + 2, baseY, bw - 4, Math.max(1, Math.round(s * 0.6)));
+
+    drawSprite(BRIDE, leftX, baseY - bh + bobA, s);
+    drawSprite(GROOM, rightX, baseY - bh + bobB, s);
+
+    // 中间飘心
+    if (!REDUCED) {
+      for (let i = 0; i < 3; i++) {
+        const p = ((t / 5200) + i / 3) % 1;
+        const hx = Math.round(W / 2 + Math.sin(p * 6.28 + i) * W * 0.035);
+        const hy = Math.round(baseY - bh * 0.55 - p * bh * 1.1);
+        const a = (1 - p) * 0.9;
+        ctx.fillStyle = 'rgba(232,93,93,' + a.toFixed(2) + ')';
+        ctx.fillRect(hx, hy, 1, 1); ctx.fillRect(hx + 2, hy, 1, 1);
+        ctx.fillRect(hx, hy + 1, 3, 1);
+        ctx.fillRect(hx + 1, hy + 2, 1, 1);
+      }
+    }
+  }
+
+  function render(t) {
+    if (!W || !H) return;
+    ctx.imageSmoothingEnabled = false;
+    ctx.clearRect(0, 0, W, H);
+    horizon = Math.round(H * 0.58);
+    S = Math.max(1, Math.round(H / 85));
+    const g = H - horizon;                    // 前景草地高度
+    const ground = horizon + Math.round(g * 0.24);
+
+    drawSky();
+    drawStars(t);
+    drawSun(t);
+    drawClouds(t);
+    drawHill(horizon + 3, H * 0.05, '#5E7FA8', 0.8, 0.6);
+    drawHouse(Math.round(W * 0.07), horizon + 2, Math.max(1, Math.round(S * 0.9)));
+    drawHill(horizon + 2, H * 0.035, '#4B7C56', 1.3, 2.4);
+    drawGround();
+    drawFence(horizon + Math.round(g * 0.20), S);
+    drawLights(horizon + Math.round(g * 0.12), S, t);
+    drawTree(Math.round(W * 0.10), horizon + Math.round(g * 0.32), S);
+    drawTree(Math.round(W * 0.92), horizon + Math.round(g * 0.26), S);
+    drawCouple(t, S, ground);
+  }
+
+  function resize() {
+    const r = cv.getBoundingClientRect();
+    PX = window.innerWidth < 700 ? 3 : 4;
+    const w = Math.max(40, Math.round(r.width / PX));
+    const h = Math.max(30, Math.round(r.height / PX));
+    if (w === W && h === H) return;
+    W = w; H = h;
+    cv.width = W; cv.height = H;
+    render(performance.now() - t0);
+  }
+
+  let lastDraw = -1e9;
+  function loop(now) {
+    if (!running) return;
+    if (now - lastDraw >= 40) {          // 约 25fps，足够丝滑又省电
+      lastDraw = now;
+      render(now - t0);
+    }
+    rafId = requestAnimationFrame(loop);
+  }
+  function start() {
+    if (running || REDUCED) return;
+    running = true;
+    rafId = requestAnimationFrame(loop);
+  }
+  function stop() {
+    running = false;
+    cancelAnimationFrame(rafId);
+  }
+
+  let rt;
+  window.addEventListener('resize', function () {
+    clearTimeout(rt);
+    rt = setTimeout(function () { resize(); render(performance.now() - t0); }, 160);
+  });
+
+  resize();
+  render(0);
+  if (REDUCED) {
+    render(0);
+  } else {
+    start();
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { e.isIntersecting ? start() : stop(); });
+      }, { threshold: 0.02 }).observe(cv);
+    }
+    document.addEventListener('visibilitychange', function () {
+      document.hidden ? stop() : start();
+    });
+  }
+})();
+</script>
+</body>
+</html>
